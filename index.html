@@ -86,25 +86,23 @@
     </section>
 
     <section id="monitoramento" aria-labelledby="titulo-monitoramento">
-      <span class="tag">Referência real</span>
+      <span class="tag">O que já é feito.</span>
       <h2 class="section-title" id="titulo-monitoramento">Monitoramento no Paraná</h2>
       <div class="grid-2">
         <div class="info-box">
-          <h3>CigarrinhaWeb como inspiração</h3>
+          <h3>CigarrinhaWeb</h3>
           <p>
-            Em 2026, o Paraná lançou a plataforma CigarrinhaWeb para reunir dados de monitoramento da
-            cigarrinha-do-milho e apoiar produtores e técnicos na tomada de decisão. Nosso projeto escolar
-            se inspira nessa lógica: observar, registrar, comparar dados e gerar alertas visuais.
+           Atualmente, o monitoramento da cigarrinha-do-milho no Paraná depende da observação periódica das armadilhas e do registro das informações pelos responsáveis pelo acompanhamento. Nosso projeto busca complementar esse processo por meio da visão computacional, automatizando a coleta inicial dos dados diretamente na lavoura.
           </p>
           <a class="button outline" href="https://www.idrparana.pr.gov.br/Noticia/Parana-lanca-plataforma-CigarrinhaWeb-para-reforcar-combate-cigarrinha-do-milho-no-Show" target="_blank" rel="noopener">
             Ver referência do IDR-Paraná
           </a>
         </div>
 
-        <div class="photo-placeholder" role="img" aria-label="Espaço reservado para imagem autoral ou captura própria mostrando estudantes analisando dados de monitoramento da cigarrinha-do-milho em um computador.">
+        <div class="photo-placeholder" role="img" aria-label="Imagem autoral de Analise dados de monitoramento da cigarrinha-do-milho em um computador.">
           <div>
             <strong>Espaço para imagem do monitoramento</strong>
-            <p>Inclua uma foto própria dos estudantes analisando dados ou testando o sistema.</p>
+            <p>O Sistema usa visão computacional para contar o número de cigarrinhas presentes na armadilha.</p>
           </div>
         </div>
       </div>
@@ -118,14 +116,17 @@
         <article class="step">
           <h3>Captura da imagem</h3>
           <p>
-            A ESP32-CAM fotografa a armadilha adesiva amarela instalada na área monitorada.
+           A ESP32-CAM registra imagens das armadilhas e a visão computacional realiza a identificação e contagem dos insetos capturados, transformando as imagens em dados para análise.
           </p>
         </article>
 
         <article class="step">
           <h3>Análise dos dados</h3>
           <p>
-            O sistema simula a contagem de cigarrinhas capturadas e organiza os valores em variáveis.
+            Para esse projeto sistema simula a contagem de cigarrinhas capturadas e organiza os valores em variáveis.
+          </p>
+          <p>
+            Apesar disso, nossa proposta real é integrar com o projeto de robótica que usa um prtótipo com ESP32-CAM, que coleta, analisa e armazena os dados em tempo real, dessa forma esse espaço serve como ferramenta visual para o produtor e ajuda na tomada de decições.
           </p>
         </article>
 
@@ -139,7 +140,7 @@
         <article class="step">
           <h3>Tomada de decisão</h3>
           <p>
-            O produtor ou técnico pode observar o alerta e planejar a próxima ação de manejo de forma mais consciente.
+           A partir do alerta, o produtor pode tomar decisões mais precisas sobre o manejo da lavoura. Isso ajuda a reduzir prejuízos causados pela infestação e também evita  <em>pulverizações preventivas</em>  sem evidência real da presença da praga. ,<em>Dessa forma, o sistema contribui para o uso mais racional de insumos agrícolas, reduz impactos ambientais e promove uma produção mais sustentável.</em>
           </p>
         </article>
       </div>
@@ -150,7 +151,7 @@
         <h2 id="titulo-dashboard">Teste os cenários de demonstração</h2>
         <p>
           No dashboard, é possível alternar entre monitoramento normal e área infestada.
-          Assim, o avaliador consegue ver o JavaScript atualizando cards, gráfico, alerta e histórico.
+          Assim, você consegue ver o JavaScript atualizando cards, gráfico, alerta e histórico.
         </p>
         <a class="button secondary" href="dashboard.html">Ir para o painel</a>
       </div>
@@ -172,6 +173,7 @@
     <div class="footer-content">
       <p><strong>Monitor Cigarrinha do Milho</strong></p>
       <p>Projeto escolar autoral com HTML, CSS e JavaScript puro.</p>
+      <p>Todas as imagens desse projetos sãod e autoria própria e tem seus direitos reservados.</p>
     </div>
   </footer>
 

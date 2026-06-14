@@ -45,6 +45,7 @@ body.dark .info-box,
 body.dark .project-card,
 body.dark .demo-panel,
 body.dark .chart-card,
+body.dark .info-dashboard,
 body.dark .reference-list {
   background: #1f2937;
   color: #f7f7f7;
@@ -62,6 +63,21 @@ body.dark .site-footer {
 body.dark .nav-link {
   color: #f7f7f7;
 }
+
+body.dark .chart-card h2,
+body.dark .info-dashboard h2,
+body.dark .info-dashboard p,
+body.dark .info-dashboard li,
+body.dark .info-dashboard strong {
+  color: #f7f7f7;
+}
+
+body.dark .chart-card,
+body.dark .info-dashboard {
+  background: #1f2937;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 
 a {
   color: inherit;
@@ -481,6 +497,17 @@ body.dark .monitor-card {
 body.dark .monitor-card.alerta {
   background: #3a1d23;
 }
+
+body.dark .monitor-card h3,
+body.dark .monitor-card p,
+body.dark .monitor-card .label-status {
+  color: #f7f7f7;
+}
+
+body.dark .monitor-card.alerta .label-status {
+  color: #fecdd3;
+}
+
 
 .monitor-card h3 {
   margin: 0 0 8px;
