@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor Cigarrinha do Milho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo">
+        Monitor Cigarrinha
+        <small>Agro forte, futuro sustentável</small>
+      </div>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <button class="theme-button" id="themeButton" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="greeting" id="greetingMessage">Carregando saudação...</span>
+          <h1 id="titulo-principal">Tecnologia para proteger o milho</h1>
+          <p>
+            A cigarrinha-do-milho é pequena no tamanho, mas pode causar grandes impactos na produção.
+            Este projeto propõe um sistema de monitoramento com ESP32-CAM, armadilhas adesivas e painel
+            digital para apoiar decisões mais sustentáveis no campo.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="dashboard.html">Abrir dashboard</a>
+            <a class="button secondary" href="#problema">Entender o problema</a>
+          </div>
+        </div>
+
+        <div class="photo-placeholder" role="img" aria-label="Espaço reservado para foto autoral de uma armadilha adesiva amarela instalada em uma lavoura de milho, com o protótipo de monitoramento ao lado.">
+          <div>
+            <strong>Espaço para foto autoral</strong>
+            <p>Adicione aqui uma imagem da armadilha, do milharal ou do protótipo com ESP32-CAM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" aria-labelledby="titulo-problema">
+      <span class="tag">Problemática</span>
+      <h2 class="section-title" id="titulo-problema">O que é a cigarrinha-do-milho?</h2>
+      <p class="section-lead">
+        A cigarrinha-do-milho, conhecida cientificamente como <em>Dalbulus maidis</em>, é um inseto que pode
+        transmitir doenças associadas ao complexo de enfezamentos do milho. Quando a infestação não é acompanhada,
+        o produtor pode perder produtividade, qualidade dos grãos e tempo de resposta no manejo.
+      </p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Ela transmite doenças</h3>
+          <p>
+            O maior problema não é apenas a presença do inseto, mas sua capacidade de transmitir patógenos
+            que prejudicam o desenvolvimento das plantas.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>O monitoramento orienta decisões</h3>
+          <p>
+            A leitura frequente das armadilhas ajuda a identificar aumento populacional e evita decisões
+            baseadas apenas em impressão visual.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Sustentabilidade no manejo</h3>
+          <p>
+            Com dados, é possível planejar ações mais precisas e reduzir aplicações desnecessárias de defensivos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="monitoramento" aria-labelledby="titulo-monitoramento">
+      <span class="tag">Referência real</span>
+      <h2 class="section-title" id="titulo-monitoramento">Monitoramento no Paraná</h2>
+      <div class="grid-2">
+        <div class="info-box">
+          <h3>CigarrinhaWeb como inspiração</h3>
+          <p>
+            Em 2026, o Paraná lançou a plataforma CigarrinhaWeb para reunir dados de monitoramento da
+            cigarrinha-do-milho e apoiar produtores e técnicos na tomada de decisão. Nosso projeto escolar
+            se inspira nessa lógica: observar, registrar, comparar dados e gerar alertas visuais.
+          </p>
+          <a class="button outline" href="https://www.idrparana.pr.gov.br/Noticia/Parana-lanca-plataforma-CigarrinhaWeb-para-reforcar-combate-cigarrinha-do-milho-no-Show" target="_blank" rel="noopener">
+            Ver referência do IDR-Paraná
+          </a>
+        </div>
+
+        <div class="photo-placeholder" role="img" aria-label="Espaço reservado para imagem autoral ou captura própria mostrando estudantes analisando dados de monitoramento da cigarrinha-do-milho em um computador.">
+          <div>
+            <strong>Espaço para imagem do monitoramento</strong>
+            <p>Inclua uma foto própria dos estudantes analisando dados ou testando o sistema.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="titulo-projeto">
+      <span class="tag">Nosso projeto</span>
+      <h2 class="section-title" id="titulo-projeto">Como o sistema foi pensado?</h2>
+
+      <div class="steps">
+        <article class="step">
+          <h3>Captura da imagem</h3>
+          <p>
+            A ESP32-CAM fotografa a armadilha adesiva amarela instalada na área monitorada.
+          </p>
+        </article>
+
+        <article class="step">
+          <h3>Análise dos dados</h3>
+          <p>
+            O sistema simula a contagem de cigarrinhas capturadas e organiza os valores em variáveis.
+          </p>
+        </article>
+
+        <article class="step">
+          <h3>Alerta visual</h3>
+          <p>
+            Quando a contagem ultrapassa o limite definido, o dashboard destaca a área infestada.
+          </p>
+        </article>
+
+        <article class="step">
+          <h3>Tomada de decisão</h3>
+          <p>
+            O produtor ou técnico pode observar o alerta e planejar a próxima ação de manejo de forma mais consciente.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-dashboard">
+      <div class="callout">
+        <h2 id="titulo-dashboard">Teste os cenários de demonstração</h2>
+        <p>
+          No dashboard, é possível alternar entre monitoramento normal e área infestada.
+          Assim, o avaliador consegue ver o JavaScript atualizando cards, gráfico, alerta e histórico.
+        </p>
+        <a class="button secondary" href="dashboard.html">Ir para o painel</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-referencias">
+      <h2 class="section-title" id="titulo-referencias">Referências usadas no projeto</h2>
+      <div class="reference-list">
+        <ul>
+          <li>IDR-Paraná. Paraná lança plataforma CigarrinhaWeb para reforçar combate à cigarrinha-do-milho no Show Rural. 2026.</li>
+          <li>Agência Estadual de Notícias do Paraná. Lançada no Show Rural, plataforma monitora cigarrinha-do-milho nas lavouras do Paraná. 2026.</li>
+          <li>Adapar. Monitoramento do complexo do enfezamento e seu vetor. 2023.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>Monitor Cigarrinha do Milho</strong></p>
+      <p>Projeto escolar autoral com HTML, CSS e JavaScript puro.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

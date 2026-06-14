@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Monitor Cigarrinha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <div class="header-content">
+      <div class="logo">
+        Dashboard de Monitoramento
+        <small>Dados simulados para demonstração</small>
+      </div>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+        <button class="theme-button" id="themeButton" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="dashboard-title" aria-labelledby="titulo-dashboard">
+      <div>
+        <h1 id="titulo-dashboard">Painel das armadilhas</h1>
+        <p>
+          Alterne os cenários abaixo para observar como o painel muda quando o monitoramento está normal
+          ou quando uma área infestada é identificada.
+        </p>
+      </div>
+      <a class="button outline" href="index.html">Voltar para a home</a>
+    </section>
+
+    <section class="demo-panel" aria-labelledby="titulo-demo">
+      <div>
+        <h2 id="titulo-demo">Cenários de demonstração</h2>
+        <p id="scenarioDescription">Monitoramento normal em todas as áreas.</p>
+      </div>
+
+      <div class="demo-buttons">
+        <button class="button primary" id="normalButton" type="button">Monitoramento normal</button>
+        <button class="button secondary" id="alertButton" type="button">Área infestada</button>
+      </div>
+    </section>
+
+    <div class="status-alert" id="statusAlert" role="alert">
+      Alerta: uma das áreas ultrapassou o limite de segurança definido para esta demonstração.
+    </div>
+
+    <section class="cards-monitoramento" id="cardsContainer" aria-label="Cards das armadilhas">
+      <!-- Cards criados pelo JavaScript -->
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="chart-card">
+        <h2>Contagem por armadilha</h2>
+        <canvas id="chartCanvas" width="900" height="420" aria-label="Gráfico de barras com contagem simulada de cigarrinhas por armadilha" role="img"></canvas>
+      </article>
+
+      <aside class="info-dashboard">
+        <h2>Histórico do sistema</h2>
+        <ul class="log-list" id="logList">
+          <!-- Histórico criado pelo JavaScript -->
+        </ul>
+
+        <h2>Critério de alerta</h2>
+        <p>
+          Nesta demonstração, valores acima de <strong>20 cigarrinhas</strong> por armadilha geram alerta.
+          Esse limite é didático e pode ser ajustado conforme orientação técnica.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
