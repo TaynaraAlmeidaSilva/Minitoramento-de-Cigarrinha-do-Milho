@@ -6,9 +6,14 @@ A proposta apresenta uma página inicial explicando a problemática da cigarrinh
 
 ## Sobre o problema
 
-A cigarrinha-do-milho, conhecida cientificamente como *Dalbulus maidis*, pode transmitir doenças associadas ao complexo de enfezamentos do milho. O monitoramento da presença do inseto ajuda produtores e técnicos a tomarem decisões mais precisas e sustentáveis.
+## Sobre o problema
 
-O projeto se inspira em iniciativas reais de monitoramento no Paraná, como a plataforma CigarrinhaWeb, lançada em 2026 para centralizar informações sobre a presença da cigarrinha-do-milho nas lavouras do estado.
+A cigarrinha-do-milho, conhecida cientificamente como *Dalbulus maidis*, é uma praga que pode transmitir doenças associadas ao complexo de enfezamentos do milho, causando prejuízos à produtividade e à qualidade das lavouras. Por isso, o monitoramento da presença do inseto é essencial para apoiar decisões mais rápidas, precisas e sustentáveis no manejo agrícola.
+
+No Paraná, já existem iniciativas importantes de acompanhamento da cigarrinha-do-milho, como a plataforma CigarrinhaWeb, que reúne informações registradas por técnicos e produtores a partir da verificação das armadilhas no campo.
+
+Este projeto contribui com essa lógica de monitoramento ao propor uma etapa automatizada: a coleta de dados diretamente na lavoura por meio de visão computacional. Com o uso de uma ESP32-CAM, o sistema captura imagens das armadilhas, simula a contagem dos insetos e disponibiliza os dados em um dashboard interativo, reduzindo a dependência de registros manuais e fortalecendo o uso de dados na agricultura sustentável.
+
 
 ## Tecnologias utilizadas
 
