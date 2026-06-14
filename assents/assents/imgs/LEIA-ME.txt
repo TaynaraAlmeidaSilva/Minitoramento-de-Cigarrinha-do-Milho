@@ -1,0 +1,4 @@
+Adicione aqui as imagens autorais do projeto. Sugestões:
+1. armadilha-milho.jpg - foto da armadilha adesiva amarela no milharal.
+2. prototipo-esp32.jpg - foto do protótipo com ESP32-CAM.
+3. estudantes-dashboard.jpg - foto dos estudantes analisando o dashboard.
